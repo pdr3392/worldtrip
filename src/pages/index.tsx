@@ -4,8 +4,8 @@ import Header from "../components/Header";
 
 export default function Home() {
   return (
-    <Flex direction="column" h="100vh">
-      <Header />
+    <Flex direction="column" align="center" h="100vh">
+      <Header needBackward={false} />
 
       <Flex direction="column" maxWidth={1440} w="100%">
         <Box as="div" mb="20">
