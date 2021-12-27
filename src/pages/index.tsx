@@ -7,7 +7,7 @@ export default function Home() {
     <Flex direction="column" align="center" h="100vh">
       <Header needBackward={false} />
 
-      <Flex direction="column" maxWidth={1440} w="100%">
+      <Flex direction="column" maxWidth={1440} w="100%" bgColor="gray.200">
         <Box as="div" mb="20">
           <img src="/images/Banner.svg" alt="Banner" />
         </Box>
