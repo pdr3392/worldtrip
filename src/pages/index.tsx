@@ -61,7 +61,33 @@ export default function Home() {
               keyboard={true}
               className="mySwiper"
             >
-              <SwiperSlide>Slide 1</SwiperSlide>
+              <SwiperSlide
+                style={{
+                  "background-image": "url('/images/EuropeSwiper.svg')",
+                }}
+              >
+                <Box mt="2.5rem">
+                  <Text
+                    fontFamily="Poppins"
+                    fontWeight="700"
+                    fontSize="3rem"
+                    lineHeight="4.5rem"
+                    color="gray.200"
+                  >
+                    Europa
+                  </Text>
+                  <Text
+                    fontFamily="Poppins"
+                    fontWeight="700"
+                    fontSize="1.5rem"
+                    lineHeight="2.25rem"
+                    color="gray.200"
+                  >
+                    O continente mais antigo.
+                  </Text>
+                </Box>
+              </SwiperSlide>
+
               <SwiperSlide>Slide 2</SwiperSlide>
               <SwiperSlide>Slide 3</SwiperSlide>
               <SwiperSlide>Slide 4</SwiperSlide>
