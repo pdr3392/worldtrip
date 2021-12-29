@@ -1,5 +1,4 @@
 import { Box, Stack, Text, VStack } from "@chakra-ui/react";
-import { Icon } from "@chakra-ui/core";
 
 interface DestinationLargeInfoProps {
   folderPath: string;
@@ -50,7 +49,12 @@ export default function DestinationLargeInfo({
             {country}
           </Text>
         </VStack>
-        <Box position="absolute" left="11rem" w="1.875rem" h="1.875rem">
+        <Box
+          position="absolute"
+          left="11rem"
+          width="1.875rem"
+          height="1.875rem"
+        >
           <img src={`/images/${elipsePath}.svg`} alt="United Kingdom" />
         </Box>
       </Stack>
