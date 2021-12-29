@@ -22,8 +22,10 @@ export default function DestinationSmallInfo({
       >
         {highlight}
       </Text>
-      <Flex direction="row" align="center">
+      <Flex align="center" justify="center">
         <Text
+          whiteSpace="nowrap"
+          textAlign="center"
           color="gray.900"
           fontSize="1.5rem"
           fontWeight="600"

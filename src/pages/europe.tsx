@@ -13,11 +13,16 @@ export default function Europe() {
           <img src="/images/europeBanner.svg" alt="Banner" />
         </Box>
 
-        <Stack maxWidth={1160} direction="row" spacing="4.5rem">
+        <Stack
+          maxWidth={1160}
+          ml="auto"
+          mr="auto"
+          direction="row"
+          spacing="4.5rem"
+        >
           <Text
             maxWidth={600}
             maxHeight={211}
-            ml="36"
             textAlign="justify"
             fontSize="1.5rem"
             fontWeight="400"
