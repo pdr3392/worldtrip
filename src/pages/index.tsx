@@ -1,6 +1,20 @@
 import { Box, Flex, Image, Stack, Text } from "@chakra-ui/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import BodyIcon from "../components/BodyIcon";
 import Header from "../components/Header";
+
+import SwiperCore, {
+  Navigation,
+  Pagination,
+  Mousewheel,
+  Keyboard,
+} from "swiper";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+SwiperCore.use([Navigation, Pagination, Mousewheel, Keyboard]);
 
 export default function Home() {
   return (
@@ -38,7 +52,26 @@ export default function Home() {
             </Text>
           </Stack>
 
-          <Box h="28.125rem" w="77.5rem" bgColor="red"></Box>
+          <Box h="28.125rem" w="77.5rem">
+            <Swiper
+              cssMode={true}
+              navigation={true}
+              pagination={true}
+              mousewheel={true}
+              keyboard={true}
+              className="mySwiper"
+            >
+              <SwiperSlide>Slide 1</SwiperSlide>
+              <SwiperSlide>Slide 2</SwiperSlide>
+              <SwiperSlide>Slide 3</SwiperSlide>
+              <SwiperSlide>Slide 4</SwiperSlide>
+              <SwiperSlide>Slide 5</SwiperSlide>
+              <SwiperSlide>Slide 6</SwiperSlide>
+              <SwiperSlide>Slide 7</SwiperSlide>
+              <SwiperSlide>Slide 8</SwiperSlide>
+              <SwiperSlide>Slide 9</SwiperSlide>
+            </Swiper>
+          </Box>
         </Stack>
       </Flex>
     </Flex>

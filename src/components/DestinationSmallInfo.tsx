@@ -1,5 +1,16 @@
 import { Flex, Text } from "@chakra-ui/react";
 import { InfoOutlineIcon } from "@chakra-ui/icons";
+import {
+  Popover,
+  PopoverTrigger,
+  PopoverContent,
+  PopoverHeader,
+  PopoverBody,
+  PopoverFooter,
+  PopoverArrow,
+  PopoverCloseButton,
+  PopoverAnchor,
+} from "@chakra-ui/react";
 
 interface DestinationSmallInfoProps {
   highlight: string;
@@ -34,12 +45,25 @@ export default function DestinationSmallInfo({
           {info}
         </Text>
         {infoIcon && (
-          <InfoOutlineIcon
-            ml="0.375rem"
-            color="gray.600"
-            opacity="50%"
-            size="0.8rem"
-          />
+          <Popover>
+            <PopoverTrigger>
+              <InfoOutlineIcon
+                _hover={{ color: "yellow.500", cursor: "pointer" }}
+                ml="0.375rem"
+                color="gray.600"
+                opacity="50%"
+                size="0.8rem"
+              />
+            </PopoverTrigger>
+            <PopoverContent width="180px" borderColor="gray.400">
+              <PopoverArrow />
+              <PopoverCloseButton />
+              <PopoverHeader>Confirmation!</PopoverHeader>
+              <PopoverBody>
+                Are you sure you want to have that milkshake?
+              </PopoverBody>
+            </PopoverContent>
+          </Popover>
         )}
       </Flex>
     </Flex>
