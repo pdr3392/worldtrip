@@ -1,49 +1,57 @@
 import { Box, Stack, Text, VStack } from "@chakra-ui/react";
+import { Icon } from "@chakra-ui/core";
 
-export default function DestinationLargeInfo() {
+interface DestinationLargeInfoProps {
+  folderPath: string;
+  city: string;
+  country: string;
+  elipsePath: string;
+}
+
+export default function DestinationLargeInfo({
+  folderPath,
+  city,
+  country,
+  elipsePath,
+}: DestinationLargeInfoProps) {
   return (
     <Box
+      _hover={{ cursor: "pointer", outline: "1px solid rgb(255, 186, 8)" }}
       position="relative"
       borderRadius="4"
-      outline="1px solid #FFBA08"
+      outline="1px solid rgba(255, 186, 8, 0.5)"
       outlineOffset="-1px"
       w="16rem"
       h="17.438rem"
     >
       <Box position="absolute">
-        <img src="/images/LondonFolder.svg" alt="London" />
+        <img src={`/images/${folderPath}.svg`} alt="London" />
       </Box>
 
-      <Stack
-        position="absolute"
-        spacing="6.5rem"
-        direction="row"
-        mt="48"
-        ml="3"
-        align="center"
-      >
+      <Stack position="absolute" direction="row" mt="48" ml="3" align="center">
         <VStack align="flex-start">
           <Text
             fontFamily="Barlow"
             fontWeight="600"
             fontSize="1.25rem"
-            LineHeight="1.563rem"
+            lineHeight="1.563rem"
             color="gray.900"
           >
-            Londres
+            {city}
           </Text>
           <Text
+            whiteSpace="nowrap"
             fontFamily="Barlow"
             fontWeight="500"
             fontSize="1rem"
-            LineHeight="1.625rem"
+            lineHeight="1.625rem"
             color="gray.600"
           >
-            Reino Unido
+            {country}
           </Text>
         </VStack>
-        <Box w="1.875rem" h="1.875rem">
-          <img src="/images/UkElipse.svg" alt="United Kingdom" />
+        <Box position="absolute" left="11rem" w="1.875rem" h="1.875rem">
+          <img src={`/images/${elipsePath}.svg`} alt="United Kingdom" />
         </Box>
       </Stack>
     </Box>

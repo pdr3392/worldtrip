@@ -49,17 +49,39 @@ export default function Europe() {
           </Text>
           <Stack spacing="6">
             <Stack mt="10" direction="row" mb="9" spacing="2.813rem">
-              <DestinationLargeInfo />
-              <DestinationLargeInfo />
-              <DestinationLargeInfo />
-              <DestinationLargeInfo />
+              <DestinationLargeInfo
+                city="Londres"
+                country="Reino Unido"
+                folderPath="LondonFolder"
+                elipsePath="UkElipse"
+              />
+              <DestinationLargeInfo
+                city="Paris"
+                country="França"
+                folderPath="ParisFolder"
+                elipsePath="FrElipse"
+              />
+              <DestinationLargeInfo
+                city="Roma"
+                country="Itália"
+                folderPath="RomeFolder"
+                elipsePath="ItElipse"
+              />
+              <DestinationLargeInfo
+                city="Praga"
+                country="República Tcheca"
+                folderPath="PragueFolder"
+                elipsePath="CzElipse"
+              />
             </Stack>
 
             <Stack mt="10" direction="row" mb="9" spacing="2.813rem">
-              <DestinationLargeInfo />
-              <DestinationLargeInfo />
-              <DestinationLargeInfo />
-              <DestinationLargeInfo />
+              <DestinationLargeInfo
+                city="Amsterdã"
+                country="Holanda"
+                folderPath="AmsterdamFolder"
+                elipsePath="NlElipse"
+              />
             </Stack>
           </Stack>
         </Box>
