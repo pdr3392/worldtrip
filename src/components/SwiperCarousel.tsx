@@ -48,7 +48,7 @@ export default function SwiperCarousel() {
           <CarouselItem
             uid="europe"
             continent="América do Norte"
-            info="Um mergulho cosmopolitano."
+            info="Mergulho cosmopolitano."
           />
         </SwiperSlide>
         <SwiperSlide
@@ -81,9 +81,18 @@ export default function SwiperCarousel() {
         >
           <CarouselItem uid="europe" continent="África" info="Bambaataa" />
         </SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        <SwiperSlide
+          style={{
+            filter: "brightness(0.9)",
+            backgroundImage: "url('/images/OcSwiper.jpg')",
+          }}
+        >
+          <CarouselItem
+            uid="europe"
+            continent="Oceania"
+            info="Um passeio nas grandes ilhas."
+          />
+        </SwiperSlide>
       </Swiper>
     </Box>
   );

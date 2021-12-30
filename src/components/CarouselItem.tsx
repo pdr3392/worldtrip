@@ -4,11 +4,16 @@ import Link from "next/link";
 interface CarouselItemProps {
   continent: string;
   info: string;
+  uid: string;
 }
 
-export default function CarouselItem({ continent, info }: CarouselItemProps) {
+export default function CarouselItem({
+  uid,
+  continent,
+  info,
+}: CarouselItemProps) {
   return (
-    <Link href="/europe" passHref>
+    <Link href={`/${uid}`} passHref>
       <ChakraLink style={{ textDecoration: "none" }}>
         <Box mt="2.5rem">
           <Text
