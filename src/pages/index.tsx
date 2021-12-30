@@ -1,20 +1,7 @@
 import { Box, Flex, Image, Stack, Text } from "@chakra-ui/react";
-import { Swiper, SwiperSlide } from "swiper/react";
 import BodyIcon from "../components/BodyIcon";
 import Header from "../components/Header";
-
-import SwiperCore, {
-  Navigation,
-  Pagination,
-  Mousewheel,
-  Keyboard,
-} from "swiper";
-
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-
-SwiperCore.use([Navigation, Pagination, Mousewheel, Keyboard]);
+import SwiperCarousel from "../components/SwiperCarousel";
 
 export default function Home() {
   return (
@@ -52,52 +39,7 @@ export default function Home() {
             </Text>
           </Stack>
 
-          <Box h="28.125rem" w="77.5rem">
-            <Swiper
-              cssMode={true}
-              navigation={true}
-              pagination={true}
-              mousewheel={true}
-              keyboard={true}
-              className="mySwiper"
-            >
-              <SwiperSlide
-                style={{
-                  "background-image": "url('/images/EuropeSwiper.svg')",
-                }}
-              >
-                <Box mt="2.5rem">
-                  <Text
-                    fontFamily="Poppins"
-                    fontWeight="700"
-                    fontSize="3rem"
-                    lineHeight="4.5rem"
-                    color="gray.200"
-                  >
-                    Europa
-                  </Text>
-                  <Text
-                    fontFamily="Poppins"
-                    fontWeight="700"
-                    fontSize="1.5rem"
-                    lineHeight="2.25rem"
-                    color="gray.200"
-                  >
-                    O continente mais antigo.
-                  </Text>
-                </Box>
-              </SwiperSlide>
-
-              <SwiperSlide>Slide 2</SwiperSlide>
-              <SwiperSlide>Slide 3</SwiperSlide>
-              <SwiperSlide>Slide 4</SwiperSlide>
-              <SwiperSlide>Slide 5</SwiperSlide>
-              <SwiperSlide>Slide 6</SwiperSlide>
-              <SwiperSlide>Slide 7</SwiperSlide>
-              <SwiperSlide>Slide 8</SwiperSlide>
-              <SwiperSlide>Slide 9</SwiperSlide>
-            </Swiper>
-          </Box>
+          <SwiperCarousel />
         </Stack>
       </Flex>
     </Flex>
