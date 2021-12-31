@@ -8,12 +8,12 @@ interface CarouselItemProps {
 }
 
 export default function CarouselItem({
-  uid,
   continent,
+  uid,
   info,
 }: CarouselItemProps) {
   return (
-    <Link href={`/${uid}`} passHref>
+    <Link href={`/${uid}}`} passHref>
       <ChakraLink style={{ textDecoration: "none" }}>
         <Box mt="2.5rem">
           <Text

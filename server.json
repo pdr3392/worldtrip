@@ -1,8 +1,56 @@
 {
-  "continents": {
-    "europe": {
-      "uid": "europe",
-      "lgInfo": "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste"
+  "continents": [
+    {
+      "europe": {
+        "uid": "europe",
+        "name": "Europa",
+        "callToAction": "O continente mais antigo.",
+        "swiperImage": "/images/EuropeSwiper.svg",
+        "lgInfo": "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste",
+        "lgItems": [
+          {
+            "highlight": "50",
+            "info": "países",
+            "infoIcon": false
+          },
+          {
+            "highlight": "60",
+            "info": "línguas",
+            "infoIcon": false
+          },
+          {
+            "highlight": "27",
+            "info": "cidades +100",
+            "infoIcon": true
+          }
+        ]
+      }
+    },
+    {
+      "asia": {
+        "uid": "asia",
+        "name": "Ásia",
+        "callToAction": "Um leque de diversidade.",
+        "swiperImage": "/images/AsSwiper.jpg",
+        "lgInfo": "Lorem Ipsum...",
+        "lgItems": [
+          {
+            "highlight": "50",
+            "info": "países",
+            "infoIcon": false
+          },
+          {
+            "highlight": "60",
+            "info": "línguas",
+            "infoIcon": false
+          },
+          {
+            "highlight": "27",
+            "info": "cidades +100",
+            "infoIcon": true
+          }
+        ]
+      }
     }
-  }
+  ]
 }

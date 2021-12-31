@@ -1,5 +1,4 @@
 import { Box, Text, Link as ChakraLink } from "@chakra-ui/react";
-import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import CarouselItem from "../components/CarouselItem";
 
@@ -14,9 +13,28 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
+interface ContinentLargeItemsProps {
+  highlight: string;
+  info: string;
+  infoIcon: boolean;
+}
+
+interface ContinentProps {
+  name: string;
+  uid: string;
+  lgInfo: string;
+  callToAction: string;
+  swiperImage: string;
+  lgItems: ContinentLargeItemsProps[];
+}
+
+interface SwiperCarouselProps {
+  continents: ContinentProps[];
+}
+
 SwiperCore.use([Navigation, Pagination, Mousewheel, Keyboard]);
 
-export default function SwiperCarousel() {
+export default function SwiperCarousel({ continents }: SwiperCarouselProps) {
   return (
     <Box h="28.125rem" w="77.5rem">
       <Swiper
@@ -27,6 +45,20 @@ export default function SwiperCarousel() {
         keyboard={true}
         className="mySwiper"
       >
+        {continents.map((continent) => (
+          <SwiperSlide
+            key={continent.uid}
+            style={{
+              backgroundImage: `url(${continent.swiperImage})`,
+            }}
+          >
+            <CarouselItem
+              uid={continent.uid}
+              continent={continent.name}
+              info={continent.callToAction}
+            />
+          </SwiperSlide>
+        ))}
         <SwiperSlide
           style={{
             backgroundImage: "url('/images/EuropeSwiper.svg')",
@@ -38,7 +70,7 @@ export default function SwiperCarousel() {
             info="O continente mais antigo."
           />
         </SwiperSlide>
-
+        {/* 
         <SwiperSlide
           style={{
             opacity: 0.9,
@@ -92,7 +124,7 @@ export default function SwiperCarousel() {
             continent="Oceania"
             info="Um passeio nas grandes ilhas."
           />
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swiper>
     </Box>
   );

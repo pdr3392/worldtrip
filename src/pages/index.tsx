@@ -1,9 +1,33 @@
 import { Box, Flex, Image, Stack, Text } from "@chakra-ui/react";
+import { GetServerSideProps, GetStaticPaths, GetStaticProps } from "next";
+import { useEffect, useState } from "react";
 import BodyIcon from "../components/BodyIcon";
 import Header from "../components/Header";
 import SwiperCarousel from "../components/SwiperCarousel";
+import api from "../services/api";
 
-export default function Home() {
+interface ContinentLargeItemsProps {
+  highlight: string;
+  info: string;
+  infoIcon: boolean;
+}
+
+interface ContinentProps {
+  name: string;
+  uid: string;
+  lgInfo: string;
+  callToAction: string;
+  swiperImage: string;
+  lgItems: ContinentLargeItemsProps[];
+}
+
+interface HomeProps {
+  continents: ContinentProps[];
+}
+
+export default function Home({ continents }: HomeProps) {
+  console.log(continents);
+
   return (
     <Flex direction="column" align="center" h="100vh">
       <Header needBackward={false} />
@@ -39,9 +63,20 @@ export default function Home() {
             </Text>
           </Stack>
 
-          <SwiperCarousel />
+          <SwiperCarousel continents={continents} />
         </Stack>
       </Flex>
     </Flex>
   );
 }
+
+export const getServerSideProps: GetServerSideProps = async () => {
+  const response = await api
+    .get("/continents")
+    .then((res) => res.data)
+    .catch((err) => console.log(err));
+
+  return {
+    props: { continents: response },
+  };
+};
