@@ -12,6 +12,8 @@ import SwiperCore, {
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { useEffect, useState } from "react";
+import api from "../services/api";
 
 interface ContinentLargeItemsProps {
   highlight: string;
@@ -28,13 +30,22 @@ interface ContinentProps {
   lgItems: ContinentLargeItemsProps[];
 }
 
-interface SwiperCarouselProps {
-  continents: ContinentProps[];
-}
-
 SwiperCore.use([Navigation, Pagination, Mousewheel, Keyboard]);
 
-export default function SwiperCarousel({ continents }: SwiperCarouselProps) {
+export default function SwiperCarousel() {
+  const [continents, setContinents] = useState<ContinentProps[]>([]);
+
+  useEffect(() => {
+    async function loadContinents(): Promise<void> {
+      const response = await api.get("/continents");
+
+      setContinents(response.data);
+    }
+
+    loadContinents();
+  }, []);
+
+  console.log(continents);
   return (
     <Box h="28.125rem" w="77.5rem">
       <Swiper

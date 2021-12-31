@@ -21,13 +21,7 @@ interface ContinentProps {
   lgItems: ContinentLargeItemsProps[];
 }
 
-interface HomeProps {
-  continents: ContinentProps[];
-}
-
-export default function Home({ continents }: HomeProps) {
-  console.log(continents);
-
+export default function Home() {
   return (
     <Flex direction="column" align="center" h="100vh">
       <Header needBackward={false} />
@@ -63,20 +57,9 @@ export default function Home({ continents }: HomeProps) {
             </Text>
           </Stack>
 
-          <SwiperCarousel continents={continents} />
+          <SwiperCarousel />
         </Stack>
       </Flex>
     </Flex>
   );
 }
-
-export const getServerSideProps: GetServerSideProps = async () => {
-  const response = await api
-    .get("/continents")
-    .then((res) => res.data)
-    .catch((err) => console.log(err));
-
-  return {
-    props: { continents: response },
-  };
-};
