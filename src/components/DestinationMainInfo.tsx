@@ -1,7 +1,21 @@
 import { Stack, Text } from "@chakra-ui/react";
 import DestinationSmallInfo from "./DestinationSmallInfo";
 
-export default function DestinationMainInfo() {
+interface ContinentLargeItemsProps {
+  highlight: string;
+  info: string;
+  infoIcon: boolean;
+}
+
+interface DestinationMainInfoProps {
+  mainInfo: string;
+  lgInfo: ContinentLargeItemsProps[];
+}
+
+export default function DestinationMainInfo({
+  mainInfo,
+  lgInfo,
+}: DestinationMainInfoProps) {
   return (
     <Stack maxWidth={1160} ml="auto" mr="auto" direction="row" spacing="4.5rem">
       <Text
@@ -12,15 +26,17 @@ export default function DestinationMainInfo() {
         fontWeight="400"
         lineHeight="2.25rem"
       >
-        A Europa é, por convenção, um dos seis continentes do mundo.
-        Compreendendo a península ocidental da Eurásia, a Europa geralmente
-        divide-se da Ásia a leste pela divisória de águas dos montes Urais, o
-        rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste
+        {mainInfo}
       </Text>
 
-      <DestinationSmallInfo highlight="50" info="países" infoIcon={false} />
-      <DestinationSmallInfo highlight="60" info="línguas" infoIcon={false} />
-      <DestinationSmallInfo highlight="27" info="cidades +100" infoIcon />
+      {lgInfo.map((info) => (
+        <DestinationSmallInfo
+          key={info.info}
+          highlight={info.highlight}
+          info={info.info}
+          infoIcon={info.infoIcon}
+        />
+      ))}
     </Stack>
   );
 }
