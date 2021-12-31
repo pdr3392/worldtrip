@@ -47,6 +47,102 @@
           "infoIcon": true
         }
       ]
+    },
+    {
+      "uid": "northamerica",
+      "name": "América do Norte",
+      "callToAction": "Mergulho cosmopolitano.",
+      "swiperImage": "/images/NaSwiper.jpg",
+      "lgInfo": "Lorem Ipsum...",
+      "lgItems": [
+        {
+          "highlight": "50",
+          "info": "países",
+          "infoIcon": false
+        },
+        {
+          "highlight": "60",
+          "info": "línguas",
+          "infoIcon": false
+        },
+        {
+          "highlight": "27",
+          "info": "cidades +100",
+          "infoIcon": true
+        }
+      ]
+    },
+    {
+      "uid": "southamerica",
+      "name": "América do Sul",
+      "callToAction": "Ouça a voz do continente.",
+      "swiperImage": "/images/SaSwiper.jpg",
+      "lgInfo": "Lorem Ipsum",
+      "lgItems": [
+        {
+          "highlight": "50",
+          "info": "países",
+          "infoIcon": false
+        },
+        {
+          "highlight": "60",
+          "info": "línguas",
+          "infoIcon": false
+        },
+        {
+          "highlight": "27",
+          "info": "cidades +100",
+          "infoIcon": true
+        }
+      ]
+    },
+    {
+      "uid": "africa",
+      "name": "África",
+      "callToAction": "Apaixone-se como em Casablanca",
+      "swiperImage": "/images/AfSwiper.jpg",
+      "lgInfo": "Lorem Ipsum",
+      "lgItems": [
+        {
+          "highlight": "50",
+          "info": "países",
+          "infoIcon": false
+        },
+        {
+          "highlight": "60",
+          "info": "línguas",
+          "infoIcon": false
+        },
+        {
+          "highlight": "27",
+          "info": "cidades +100",
+          "infoIcon": true
+        }
+      ]
+    },
+    {
+      "uid": "oceania",
+      "name": "Oceania",
+      "callToAction": "Um passeio nas grandes ilhas.",
+      "swiperImage": "/images/OcSwiper.jpg",
+      "lgInfo": "Lorem Ipsum",
+      "lgItems": [
+        {
+          "highlight": "50",
+          "info": "países",
+          "infoIcon": false
+        },
+        {
+          "highlight": "60",
+          "info": "línguas",
+          "infoIcon": false
+        },
+        {
+          "highlight": "27",
+          "info": "cidades +100",
+          "infoIcon": true
+        }
+      ]
     }
   ]
 }

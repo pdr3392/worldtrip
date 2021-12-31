@@ -1,4 +1,4 @@
-import { Box, Text, Link as ChakraLink } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import CarouselItem from "../components/CarouselItem";
 
@@ -12,8 +12,6 @@ import SwiperCore, {
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { useEffect, useState } from "react";
-import api from "../services/api";
 
 interface ContinentLargeItemsProps {
   highlight: string;
@@ -61,61 +59,6 @@ export default function SwiperCarousel({ continents }: SwiperCarouselProps) {
             />
           </SwiperSlide>
         ))}
-        {/* 
-        <SwiperSlide
-          style={{
-            opacity: 0.9,
-            backgroundImage: "url('/images/NaSwiper.jpg')",
-          }}
-        >
-          <CarouselItem
-            uid="europe"
-            continent="América do Norte"
-            info="Mergulho cosmopolitano."
-          />
-        </SwiperSlide>
-        <SwiperSlide
-          style={{
-            backgroundImage: "url('/images/SaSwiper.jpg')",
-          }}
-        >
-          <CarouselItem
-            uid="europe"
-            continent="América do Sul"
-            info="La voz de Sudamérica."
-          />
-        </SwiperSlide>
-        <SwiperSlide
-          style={{
-            backgroundImage: "url('/images/AsSwiper.jpg')",
-          }}
-        >
-          <CarouselItem
-            uid="europe"
-            continent="Ásia"
-            info="Um leque de diversidade."
-          />
-        </SwiperSlide>
-        <SwiperSlide
-          style={{
-            filter: "brightness(0.8)",
-            backgroundImage: "url('/images/AfSwiper.jpg')",
-          }}
-        >
-          <CarouselItem uid="europe" continent="África" info="Bambaataa" />
-        </SwiperSlide>
-        <SwiperSlide
-          style={{
-            filter: "brightness(0.9)",
-            backgroundImage: "url('/images/OcSwiper.jpg')",
-          }}
-        >
-          <CarouselItem
-            uid="europe"
-            continent="Oceania"
-            info="Um passeio nas grandes ilhas."
-          />
-        </SwiperSlide> */}
       </Swiper>
     </Box>
   );
