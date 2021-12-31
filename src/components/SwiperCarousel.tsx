@@ -30,22 +30,13 @@ interface ContinentProps {
   lgItems: ContinentLargeItemsProps[];
 }
 
+interface SwiperCarouselProps {
+  continents: ContinentProps[];
+}
+
 SwiperCore.use([Navigation, Pagination, Mousewheel, Keyboard]);
 
-export default function SwiperCarousel() {
-  const [continents, setContinents] = useState<ContinentProps[]>([]);
-
-  useEffect(() => {
-    async function loadContinents(): Promise<void> {
-      const response = await api.get("/continents");
-
-      setContinents(response.data);
-    }
-
-    loadContinents();
-  }, []);
-
-  console.log(continents);
+export default function SwiperCarousel({ continents }: SwiperCarouselProps) {
   return (
     <Box h="28.125rem" w="77.5rem">
       <Swiper
@@ -70,17 +61,6 @@ export default function SwiperCarousel() {
             />
           </SwiperSlide>
         ))}
-        <SwiperSlide
-          style={{
-            backgroundImage: "url('/images/EuropeSwiper.svg')",
-          }}
-        >
-          <CarouselItem
-            uid="europe"
-            continent="Europa"
-            info="O continente mais antigo."
-          />
-        </SwiperSlide>
         {/* 
         <SwiperSlide
           style={{

@@ -21,7 +21,11 @@ interface ContinentProps {
   lgItems: ContinentLargeItemsProps[];
 }
 
-export default function Home() {
+interface HomeProps {
+  continents: ContinentProps[];
+}
+
+export default function Home({ continents }: HomeProps) {
   return (
     <Flex direction="column" align="center" h="100vh">
       <Header needBackward={false} />
@@ -57,9 +61,23 @@ export default function Home() {
             </Text>
           </Stack>
 
-          <SwiperCarousel />
+          <SwiperCarousel continents={continents} />
         </Stack>
       </Flex>
     </Flex>
   );
 }
+
+export const getStaticProps: GetStaticProps = async () => {
+  const result = await api.get("/continents").then((res) => res.data);
+  const parsedContinents: ContinentProps[] = [];
+
+  result.map((continent: ContinentProps) => parsedContinents.push(continent));
+
+  return {
+    props: {
+      continents: parsedContinents,
+    },
+    revalidate: 60 * 60 * 24,
+  };
+};
