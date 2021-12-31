@@ -50,6 +50,8 @@ export default function SwiperCarousel({ continents }: SwiperCarouselProps) {
             key={continent.uid}
             style={{
               backgroundImage: `url(${continent.swiperImage})`,
+              backgroundPosition: "center",
+              backgroundSize: "120%",
             }}
           >
             <CarouselItem

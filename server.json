@@ -28,7 +28,7 @@
       "uid": "asia",
       "name": "Ásia",
       "callToAction": "Um leque de diversidade.",
-      "swiperImage": "/images/AsSwiper.jpg",
+      "swiperImage": "https://images.unsplash.com/photo-1493780474015-ba834fd0ce2f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",
       "lgInfo": "Lorem Ipsum...",
       "lgItems": [
         {
@@ -37,12 +37,12 @@
           "infoIcon": false
         },
         {
-          "highlight": "60",
+          "highlight": "2300",
           "info": "línguas",
           "infoIcon": false
         },
         {
-          "highlight": "27",
+          "highlight": "50",
           "info": "cidades +100",
           "infoIcon": true
         }
@@ -52,21 +52,21 @@
       "uid": "northamerica",
       "name": "América do Norte",
       "callToAction": "Mergulho cosmopolitano.",
-      "swiperImage": "/images/NaSwiper.jpg",
+      "swiperImage": "https://images.unsplash.com/photo-1512813195386-6cf811ad3542?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",
       "lgInfo": "Lorem Ipsum...",
       "lgItems": [
         {
-          "highlight": "50",
+          "highlight": "3",
           "info": "países",
           "infoIcon": false
         },
         {
-          "highlight": "60",
+          "highlight": "2",
           "info": "línguas",
           "infoIcon": false
         },
         {
-          "highlight": "27",
+          "highlight": "17",
           "info": "cidades +100",
           "infoIcon": true
         }
@@ -76,16 +76,16 @@
       "uid": "southamerica",
       "name": "América do Sul",
       "callToAction": "Ouça a voz do continente.",
-      "swiperImage": "/images/SaSwiper.jpg",
+      "swiperImage": "https://images.unsplash.com/photo-1534126874-5f6762c6181b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1062&q=80",
       "lgInfo": "Lorem Ipsum",
       "lgItems": [
         {
-          "highlight": "50",
+          "highlight": "12",
           "info": "países",
           "infoIcon": false
         },
         {
-          "highlight": "60",
+          "highlight": "9",
           "info": "línguas",
           "infoIcon": false
         },
@@ -100,21 +100,21 @@
       "uid": "africa",
       "name": "África",
       "callToAction": "Apaixone-se como em Casablanca",
-      "swiperImage": "/images/AfSwiper.jpg",
+      "swiperImage": "https://images.unsplash.com/photo-1602367381755-effb73319501?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",
       "lgInfo": "Lorem Ipsum",
       "lgItems": [
         {
-          "highlight": "50",
+          "highlight": "54",
           "info": "países",
           "infoIcon": false
         },
         {
-          "highlight": "60",
+          "highlight": "2092",
           "info": "línguas",
           "infoIcon": false
         },
         {
-          "highlight": "27",
+          "highlight": "4",
           "info": "cidades +100",
           "infoIcon": true
         }
@@ -128,17 +128,17 @@
       "lgInfo": "Lorem Ipsum",
       "lgItems": [
         {
-          "highlight": "50",
+          "highlight": "16",
           "info": "países",
           "infoIcon": false
         },
         {
-          "highlight": "60",
+          "highlight": "18",
           "info": "línguas",
           "infoIcon": false
         },
         {
-          "highlight": "27",
+          "highlight": "3",
           "info": "cidades +100",
           "infoIcon": true
         }
