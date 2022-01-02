@@ -1,5 +1,6 @@
 import {
   Box,
+  Center,
   Flex,
   Image,
   Stack,
@@ -59,50 +60,77 @@ export default function Home({ continents }: HomeProps) {
         maxWidth={[375, 1440]}
         bgColor="gray.200"
       >
-        <Box w="100%" as="div" mb={["9", "20"]}>
+        <Box w="100%" as="div" mb={["5", "20"]}>
           {isWideVersion ? (
             <img src="/images/Banner.svg" alt="Banner" />
           ) : (
-            <img src="/images/mobileBanner.svg" alt="Banner" />
+            <Image
+              w="375px"
+              h="163px"
+              src="/images/mobileBanner.svg"
+              alt="Banner"
+            />
           )}
         </Box>
 
-        <Flex>
+        <Flex justify="center">
           <Wrap
             justify="center"
-            w="100%"
+            w={["85%", "100%"]}
             spacing={["7", "32"]}
-            direction={["column", "row"]}
-            m={["3", "35"]}
-            mb={["3", "20"]}
+            direction={["row"]}
+            m={["auto", "35"]}
+            mb={["12", "32"]}
           >
             <WrapItem>
-              <BodyIcon filename="cocktail" info="vida noturna" />
+              <Center w="136px" h="21px">
+                <BodyIcon filename="cocktail" info="vida noturna" />
+              </Center>
             </WrapItem>
             <WrapItem>
-              <BodyIcon filename="surf" info="praia" />
+              <Center w="136px" h="21px">
+                <BodyIcon filename="surf" info="praia" />
+              </Center>
             </WrapItem>
             <WrapItem>
-              <BodyIcon filename="building" info="moderno" />
+              <Center w="136px" h="21px">
+                <BodyIcon filename="building" info="moderno" />
+              </Center>
             </WrapItem>
             <WrapItem>
-              <BodyIcon filename="museum" info="clássico" />
+              <Center w="136px" h="21px">
+                <BodyIcon filename="museum" info="clássico" />
+              </Center>
             </WrapItem>
-
             <WrapItem>
-              <BodyIcon filename="earth" info="e mais..." />
+              <Center w="136px" h="21px">
+                <BodyIcon filename="earth" info="e mais..." />
+              </Center>
             </WrapItem>
           </Wrap>
         </Flex>
 
-        <Stack spacing="14" align="center" mb="10">
-          <Image src="/images/Divider.svg" h="0.5" w="90" />
+        <Stack spacing={["1.25rem", "14"]} align="center" mb={["0", "10"]}>
+          <Box
+            w={["60px", "90px"]}
+            border={["1px solid rgba(71, 88, 91, 0.8)", "2px solid #47585B"]}
+          />
 
           <Stack as="div" align="center">
-            <Text as="h2" fontSize="2.25rem" fontWeight="500">
+            <Text
+              fontSize={["1.25rem", "2.25rem"]}
+              fontWeight="500"
+              lineHeight={["1.875rem", "14"]}
+              color="gray.900"
+            >
               Vamos nessa?
             </Text>
-            <Text as="h2" fontSize="2.25rem" fontWeight="500">
+            <Text
+              fontSize={["1.25rem", "2.25rem"]}
+              fontWeight="500"
+              lineHeight={["1.875rem", "14"]}
+              color="gray.900"
+            >
               Então escolha seu continente
             </Text>
           </Stack>

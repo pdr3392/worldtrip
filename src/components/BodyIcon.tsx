@@ -14,9 +14,8 @@ export default function bodyIcon({ filename, info }: BodyIconProps) {
   return (
     <Flex
       direction={["row", "column"]}
-      whiteSpace="no-break"
-      display="inline"
-      align="center"
+      maxWidth={["275", "1160"]}
+      align={["baseline", "center"]}
     >
       {isWideVersion ? (
         <Image
@@ -30,10 +29,18 @@ export default function bodyIcon({ filename, info }: BodyIconProps) {
           backgroundColor="yellow.500"
           w="0.5rem"
           h="0.5rem"
+          mr="0.5rem"
           borderRadius="50%"
         ></Box>
       )}
-      <Text fontWeight="600" mt="6">
+      <Text
+        whiteSpace="nowrap"
+        fontWeight={["500", "600"]}
+        color="gray.900"
+        mt="6"
+        fontSize={["1.125rem", "1.5rem"]}
+        lineHeight={["1.688rem", "2.25rem"]}
+      >
         {info}
       </Text>
     </Flex>
