@@ -13,6 +13,13 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
+interface HundredCitiesProps {
+  city: string;
+  country: string;
+  elipseCountry: string;
+  folderPath: string;
+}
+
 interface ContinentLargeItemsProps {
   highlight: string;
   info: string;
@@ -22,10 +29,12 @@ interface ContinentLargeItemsProps {
 interface ContinentProps {
   name: string;
   uid: string;
+  continentBanner: string;
   lgInfo: string;
   callToAction: string;
   swiperImage: string;
   lgItems: ContinentLargeItemsProps[];
+  hundredCities: HundredCitiesProps[];
 }
 
 interface SwiperCarouselProps {

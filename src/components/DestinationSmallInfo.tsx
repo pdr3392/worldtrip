@@ -55,12 +55,15 @@ export default function DestinationSmallInfo({
                 size="0.8rem"
               />
             </PopoverTrigger>
-            <PopoverContent width="180px" borderColor="gray.400">
+            <PopoverContent
+              align="center"
+              m="0.8rem"
+              width="180px"
+              borderColor="gray.400"
+            >
               <PopoverArrow />
-              <PopoverCloseButton />
-              <PopoverHeader>Confirmation!</PopoverHeader>
-              <PopoverBody>
-                Are you sure you want to have that milkshake?
+              <PopoverBody mt="10px">
+                Cidades que estão entre os 100 destinos mais visitados do mundo!
               </PopoverBody>
             </PopoverContent>
           </Popover>

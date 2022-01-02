@@ -6,6 +6,13 @@ import Header from "../components/Header";
 import SwiperCarousel from "../components/SwiperCarousel";
 import api from "../services/api";
 
+interface HundredCitiesProps {
+  city: string;
+  country: string;
+  elipseCountry: string;
+  folderPath: string;
+}
+
 interface ContinentLargeItemsProps {
   highlight: string;
   info: string;
@@ -15,10 +22,12 @@ interface ContinentLargeItemsProps {
 interface ContinentProps {
   name: string;
   uid: string;
+  continentBanner: string;
   lgInfo: string;
   callToAction: string;
   swiperImage: string;
   lgItems: ContinentLargeItemsProps[];
+  hundredCities: HundredCitiesProps[];
 }
 
 interface HomeProps {

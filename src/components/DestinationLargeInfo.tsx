@@ -1,17 +1,18 @@
 import { Box, Stack, Text, VStack } from "@chakra-ui/react";
+import ReactCountryFlag from "react-country-flag";
 
 interface DestinationLargeInfoProps {
   folderPath: string;
   city: string;
   country: string;
-  elipsePath: string;
+  elipseCountry: string;
 }
 
 export default function DestinationLargeInfo({
   folderPath,
   city,
   country,
-  elipsePath,
+  elipseCountry,
 }: DestinationLargeInfoProps) {
   return (
     <Box
@@ -22,9 +23,16 @@ export default function DestinationLargeInfo({
       outlineOffset="-1px"
       w="16rem"
       h="17.438rem"
+      minWidth="256px"
     >
-      <Box position="absolute">
-        <img src={`/images/${folderPath}.svg`} alt="London" />
+      <Box
+        position="absolute"
+        borderTopRadius="4"
+        overflow="hidden"
+        maxWidth="256px"
+        maxHeight="173px"
+      >
+        <img src={folderPath} alt={city} />
       </Box>
 
       <Stack position="absolute" direction="row" mt="48" ml="3" align="center">
@@ -55,7 +63,19 @@ export default function DestinationLargeInfo({
           width="1.875rem"
           height="1.875rem"
         >
-          <img src={`/images/${elipsePath}.svg`} alt="United Kingdom" />
+          <ReactCountryFlag
+            className="emojiFlag"
+            countryCode={elipseCountry}
+            svg
+            style={{
+              border: "0.2px solid #F5F8FA",
+              objectFit: "cover",
+              height: "1.875rem",
+              width: "1.875rem",
+              borderRadius: "100%",
+            }}
+            aria-label={elipseCountry}
+          />
         </Box>
       </Stack>
     </Box>

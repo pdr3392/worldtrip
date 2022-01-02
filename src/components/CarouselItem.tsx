@@ -13,7 +13,7 @@ export default function CarouselItem({
   info,
 }: CarouselItemProps) {
   return (
-    <Link href={`/${uid}`} passHref>
+    <Link href={`/continents/${uid}`} passHref>
       <ChakraLink style={{ textDecoration: "none" }}>
         <Box mt="2.5rem">
           <Text

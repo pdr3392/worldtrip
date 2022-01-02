@@ -5,6 +5,7 @@
       "name": "Europa",
       "callToAction": "O continente mais antigo.",
       "swiperImage": "/images/EuropeSwiper.svg",
+      "continentBanner": "https://images.unsplash.com/photo-1508808402998-ec38e4bf0fd0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",
       "lgInfo": "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste",
       "lgItems": [
         {
@@ -22,6 +23,38 @@
           "info": "cidades +100",
           "infoIcon": true
         }
+      ],
+      "hundredCities": [
+        {
+          "city": "Londres",
+          "country": "Reino Unido",
+          "elipseCountry": "GB",
+          "folderPath": "https://images.unsplash.com/photo-1533929736458-ca588d08c8be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+        },
+        {
+          "city": "Paris",
+          "country": "França",
+          "elipseCountry": "FR",
+          "folderPath": "https://images.unsplash.com/photo-1591289009723-aef0a1a8a211?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+        },
+        {
+          "city": "Roma",
+          "country": "Itália",
+          "elipseCountry": "IT",
+          "folderPath": "https://images.unsplash.com/photo-1529260830199-42c24126f198?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80"
+        },
+        {
+          "city": "Praga",
+          "country": "República Tcheca",
+          "elipseCountry": "GB",
+          "folderPath": "https://images.unsplash.com/photo-1519677100203-a0e668c92439?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+        },
+        {
+          "city": "Amsterdã",
+          "country": "Holanda",
+          "elipseCountry": "NL",
+          "folderPath": "https://images.unsplash.com/photo-1534351590666-13e3e96b5017?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+        }
       ]
     },
     {
@@ -29,7 +62,8 @@
       "name": "Ásia",
       "callToAction": "Um leque de diversidade.",
       "swiperImage": "https://images.unsplash.com/photo-1493780474015-ba834fd0ce2f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",
-      "lgInfo": "Lorem Ipsum...",
+      "continentBanner": "https://images.unsplash.com/photo-1513568720563-6a5b8c6caab3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",
+      "lgInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ante justo, euismod eu varius nec, dignissim ac dui. Quisque convallis accumsan consectetur. Vivamus porttitor augue eu purus lobortis pharetra. Nulla facilisi. Etiam consequat ipsum vitae orci.",
       "lgItems": [
         {
           "highlight": "50",
@@ -46,6 +80,38 @@
           "info": "cidades +100",
           "infoIcon": true
         }
+      ],
+      "hundredCities": [
+        {
+          "city": "Tóquio",
+          "country": "Japão",
+          "elipseCountry": "JP",
+          "folderPath": "https://images.unsplash.com/photo-1557409518-691ebcd96038?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+        },
+        {
+          "city": "Hong Kong",
+          "country": "China",
+          "elipseCountry": "CN",
+          "folderPath": "https://images.unsplash.com/photo-1619187269972-267d2b78a423?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+        },
+        {
+          "city": "Mumbai",
+          "country": "Índia",
+          "elipseCountry": "IN",
+          "folderPath": "https://images.unsplash.com/photo-1562080970-98f06a091a9b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+        },
+        {
+          "city": "Bangkok",
+          "country": "Tailândia",
+          "elipseCountry": "TH",
+          "folderPath": "https://images.unsplash.com/photo-1578167635648-df79e1565908?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+        },
+        {
+          "city": "Jacarta",
+          "country": "Indonésia",
+          "elipseCountry": "ID",
+          "folderPath": "https://images.unsplash.com/photo-1631367695372-a71d9bf8c327?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+        }
       ]
     },
     {
@@ -53,7 +119,8 @@
       "name": "América do Norte",
       "callToAction": "Mergulho cosmopolitano.",
       "swiperImage": "https://images.unsplash.com/photo-1512813195386-6cf811ad3542?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",
-      "lgInfo": "Lorem Ipsum...",
+      "continentBanner": "https://images.unsplash.com/photo-1578494277722-4ebd3d3ab9b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",
+      "lgInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ante justo, euismod eu varius nec, dignissim ac dui. Quisque convallis accumsan consectetur. Vivamus porttitor augue eu purus lobortis pharetra. Nulla facilisi. Etiam consequat ipsum vitae orci.",
       "lgItems": [
         {
           "highlight": "3",
@@ -70,6 +137,38 @@
           "info": "cidades +100",
           "infoIcon": true
         }
+      ],
+      "hundredCities": [
+        {
+          "city": "Nova Iórque",
+          "country": "Estados Unidos",
+          "elipseCountry": "US",
+          "folderPath": "https://images.unsplash.com/photo-1568515387631-8b650bbcdb90?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+        },
+        {
+          "city": "Los Angeles",
+          "country": "Estados Unidos",
+          "elipseCountry": "US",
+          "folderPath": "https://images.unsplash.com/photo-1507738844735-74791102d6d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+        },
+        {
+          "city": "Toronto",
+          "country": "Canadá",
+          "elipseCountry": "CA",
+          "folderPath": "https://images.unsplash.com/photo-1490623970972-ae8bb3da443e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80"
+        },
+        {
+          "city": "Vancouver",
+          "country": "Canadá",
+          "elipseCountry": "CA",
+          "folderPath": "https://images.unsplash.com/photo-1502228362178-086346ac6862?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+        },
+        {
+          "city": "Cancún",
+          "country": "México",
+          "elipseCountry": "MX",
+          "folderPath": "https://images.unsplash.com/photo-1613506140303-a3742bcbee78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
+        }
       ]
     },
     {
@@ -77,7 +176,8 @@
       "name": "América do Sul",
       "callToAction": "Ouça a voz do continente.",
       "swiperImage": "https://images.unsplash.com/photo-1534126874-5f6762c6181b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1062&q=80",
-      "lgInfo": "Lorem Ipsum",
+      "continentBanner": "https://images.unsplash.com/photo-1482951486181-13a752dbbd52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",
+      "lgInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ante justo, euismod eu varius nec, dignissim ac dui. Quisque convallis accumsan consectetur. Vivamus porttitor augue eu purus lobortis pharetra. Nulla facilisi. Etiam consequat ipsum vitae orci.",
       "lgItems": [
         {
           "highlight": "12",
@@ -94,6 +194,38 @@
           "info": "cidades +100",
           "infoIcon": true
         }
+      ],
+      "hundredCities": [
+        {
+          "city": "Londres",
+          "country": "Reino Unido",
+          "elipseCountry": "GB",
+          "folderPath": "LondonFolder"
+        },
+        {
+          "city": "Paris",
+          "country": "França",
+          "elipseCountry": "FR",
+          "folderPath": "ParisFolder"
+        },
+        {
+          "city": "Roma",
+          "country": "Itália",
+          "elipseCountry": "IT",
+          "folderPath": "RomeFolder"
+        },
+        {
+          "city": "Praga",
+          "country": "República Tcheca",
+          "elipseCountry": "GB",
+          "folderPath": "PragueFolder"
+        },
+        {
+          "city": "Amsterdã",
+          "country": "Holanda",
+          "elipseCountry": "NL",
+          "folderPath": "AmsterdamFolder"
+        }
       ]
     },
     {
@@ -101,7 +233,8 @@
       "name": "África",
       "callToAction": "Apaixone-se como em Casablanca",
       "swiperImage": "https://images.unsplash.com/photo-1602367381755-effb73319501?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",
-      "lgInfo": "Lorem Ipsum",
+      "continentBanner": "https://images.unsplash.com/photo-1543767011-7d8d624bc8cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=831&q=80",
+      "lgInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ante justo, euismod eu varius nec, dignissim ac dui. Quisque convallis accumsan consectetur. Vivamus porttitor augue eu purus lobortis pharetra. Nulla facilisi. Etiam consequat ipsum vitae orci.",
       "lgItems": [
         {
           "highlight": "54",
@@ -118,14 +251,47 @@
           "info": "cidades +100",
           "infoIcon": true
         }
+      ],
+      "hundredCities": [
+        {
+          "city": "Londres",
+          "country": "Reino Unido",
+          "elipseCountry": "GB",
+          "folderPath": "LondonFolder"
+        },
+        {
+          "city": "Paris",
+          "country": "França",
+          "elipseCountry": "FR",
+          "folderPath": "ParisFolder"
+        },
+        {
+          "city": "Roma",
+          "country": "Itália",
+          "elipseCountry": "IT",
+          "folderPath": "RomeFolder"
+        },
+        {
+          "city": "Praga",
+          "country": "República Tcheca",
+          "elipseCountry": "GB",
+          "folderPath": "PragueFolder"
+        },
+        {
+          "city": "Amsterdã",
+          "country": "Holanda",
+          "elipseCountry": "NL",
+          "folderPath": "AmsterdamFolder"
+        }
       ]
     },
     {
       "uid": "oceania",
       "name": "Oceania",
       "callToAction": "Um passeio nas grandes ilhas.",
-      "swiperImage": "/images/OcSwiper.jpg",
-      "lgInfo": "Lorem Ipsum",
+      "swiperImage": "https://images.unsplash.com/photo-1551140676-c5a87bdb7074?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",
+      "continentBanner": "https://images.unsplash.com/photo-1543767011-7d8d624bc8cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=831&q=80",
+      "lgInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ante justo, euismod eu varius nec, dignissim ac dui. Quisque convallis accumsan consectetur. Vivamus porttitor augue eu purus lobortis pharetra. Nulla facilisi. Etiam consequat ipsum vitae orci.",
       "lgItems": [
         {
           "highlight": "16",
@@ -141,6 +307,38 @@
           "highlight": "3",
           "info": "cidades +100",
           "infoIcon": true
+        }
+      ],
+      "hundredCities": [
+        {
+          "city": "Londres",
+          "country": "Reino Unido",
+          "elipseCountry": "GB",
+          "folderPath": "LondonFolder"
+        },
+        {
+          "city": "Paris",
+          "country": "França",
+          "elipseCountry": "FR",
+          "folderPath": "ParisFolder"
+        },
+        {
+          "city": "Roma",
+          "country": "Itália",
+          "elipseCountry": "IT",
+          "folderPath": "RomeFolder"
+        },
+        {
+          "city": "Praga",
+          "country": "República Tcheca",
+          "elipseCountry": "GB",
+          "folderPath": "PragueFolder"
+        },
+        {
+          "city": "Amsterdã",
+          "country": "Holanda",
+          "elipseCountry": "NL",
+          "folderPath": "AmsterdamFolder"
         }
       ]
     }
