@@ -1,4 +1,13 @@
-import { Box, Flex, Image, Stack, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Image,
+  Stack,
+  Text,
+  useBreakpointValue,
+  Wrap,
+  WrapItem,
+} from "@chakra-ui/react";
 import { GetServerSideProps, GetStaticPaths, GetStaticProps } from "next";
 import { useEffect, useState } from "react";
 import BodyIcon from "../components/BodyIcon";
@@ -35,28 +44,56 @@ interface HomeProps {
 }
 
 export default function Home({ continents }: HomeProps) {
+  const isWideVersion = useBreakpointValue({
+    base: false,
+    lg: true,
+  });
+
   return (
-    <Flex direction="column" align="center" h="100vh">
+    <Flex direction="column" align="center" w={["100vw", "100%"]}>
       <Header needBackward={false} />
 
-      <Flex direction="column" maxWidth={1440} w="100%" bgColor="gray.200">
-        <Box as="div" mb="20">
-          <img src="/images/Banner.svg" alt="Banner" />
+      <Flex
+        direction="column"
+        align="center"
+        maxWidth={[375, 1440]}
+        bgColor="gray.200"
+      >
+        <Box w="100%" as="div" mb={["9", "20"]}>
+          {isWideVersion ? (
+            <img src="/images/Banner.svg" alt="Banner" />
+          ) : (
+            <img src="/images/mobileBanner.svg" alt="Banner" />
+          )}
         </Box>
 
-        <Stack
-          spacing="32"
-          direction="row"
-          m="35"
-          mb="20"
-          justifyContent="center"
-        >
-          <BodyIcon filename="cocktail" info="vida noturna" />
-          <BodyIcon filename="surf" info="praia" />
-          <BodyIcon filename="building" info="moderno" />
-          <BodyIcon filename="museum" info="clássico" />
-          <BodyIcon filename="earth" info="e mais..." />
-        </Stack>
+        <Flex>
+          <Wrap
+            justify="center"
+            w="100%"
+            spacing={["7", "32"]}
+            direction={["column", "row"]}
+            m={["3", "35"]}
+            mb={["3", "20"]}
+          >
+            <WrapItem>
+              <BodyIcon filename="cocktail" info="vida noturna" />
+            </WrapItem>
+            <WrapItem>
+              <BodyIcon filename="surf" info="praia" />
+            </WrapItem>
+            <WrapItem>
+              <BodyIcon filename="building" info="moderno" />
+            </WrapItem>
+            <WrapItem>
+              <BodyIcon filename="museum" info="clássico" />
+            </WrapItem>
+
+            <WrapItem>
+              <BodyIcon filename="earth" info="e mais..." />
+            </WrapItem>
+          </Wrap>
+        </Flex>
 
         <Stack spacing="14" align="center" mb="10">
           <Image src="/images/Divider.svg" h="0.5" w="90" />

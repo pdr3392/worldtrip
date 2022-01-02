@@ -45,7 +45,7 @@ SwiperCore.use([Navigation, Pagination, Mousewheel, Keyboard]);
 
 export default function SwiperCarousel({ continents }: SwiperCarouselProps) {
   return (
-    <Box h="28.125rem" w="77.5rem">
+    <Box h={["15.625", "28.125rem"]} w={["23.438rem", "77.5rem"]}>
       <Swiper
         cssMode={true}
         navigation={true}

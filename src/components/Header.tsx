@@ -1,17 +1,28 @@
-import { Box, Flex, Link as ChakraLink } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Link as ChakraLink,
+  useBreakpointValue,
+} from "@chakra-ui/react";
 import { ChevronLeftIcon } from "@chakra-ui/icons";
 import Link from "next/link";
+import Image from "next/image";
 
 interface HeaderProps {
   needBackward: boolean;
 }
 
 export default function Header({ needBackward }: HeaderProps) {
+  const isWideVersion = useBreakpointValue({
+    base: false,
+    lg: true,
+  });
+
   return (
     <Flex
       as="header"
       w="100%"
-      minHeight="100px"
+      minHeight={["50px", "100px"]}
       alignItems="center"
       justifyContent="center"
       bgColor="gray.200"
@@ -25,7 +36,12 @@ export default function Header({ needBackward }: HeaderProps) {
           </Link>
         </Box>
       )}
-      <img src="/images/Logo.svg" alt="Logo" />
+      <Image
+        height={isWideVersion ? "45px" : "20px"}
+        width={isWideVersion ? "184px" : "81px"}
+        src="/images/Logo.svg"
+        alt="Logo"
+      />
     </Flex>
   );
 }
