@@ -190,41 +190,29 @@
           "infoIcon": false
         },
         {
-          "highlight": "27",
+          "highlight": "3",
           "info": "cidades +100",
           "infoIcon": true
         }
       ],
       "hundredCities": [
         {
-          "city": "Londres",
-          "country": "Reino Unido",
-          "elipseCountry": "GB",
-          "folderPath": "LondonFolder"
+          "city": "Buenos Aires",
+          "country": "Argentina",
+          "elipseCountry": "AR",
+          "folderPath": "https://images.unsplash.com/photo-1469307580733-007134b82100?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
         },
         {
-          "city": "Paris",
-          "country": "França",
-          "elipseCountry": "FR",
-          "folderPath": "ParisFolder"
+          "city": "Lima",
+          "country": "Peru",
+          "elipseCountry": "PE",
+          "folderPath": "https://images.unsplash.com/photo-1533655481656-8f79f05f04e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
         },
         {
-          "city": "Roma",
-          "country": "Itália",
-          "elipseCountry": "IT",
-          "folderPath": "RomeFolder"
-        },
-        {
-          "city": "Praga",
-          "country": "República Tcheca",
-          "elipseCountry": "GB",
-          "folderPath": "PragueFolder"
-        },
-        {
-          "city": "Amsterdã",
-          "country": "Holanda",
-          "elipseCountry": "NL",
-          "folderPath": "AmsterdamFolder"
+          "city": "Rio de Janeiro",
+          "country": "Brasil",
+          "elipseCountry": "BR",
+          "folderPath": "https://images.unsplash.com/photo-1548963670-aaaa8f73a5e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80"
         }
       ]
     },
@@ -233,7 +221,7 @@
       "name": "África",
       "callToAction": "Apaixone-se como em Casablanca",
       "swiperImage": "https://images.unsplash.com/photo-1602367381755-effb73319501?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",
-      "continentBanner": "https://images.unsplash.com/photo-1543767011-7d8d624bc8cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=831&q=80",
+      "continentBanner": "https://images.unsplash.com/photo-1640006246284-bbcf6642aa84?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",
       "lgInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ante justo, euismod eu varius nec, dignissim ac dui. Quisque convallis accumsan consectetur. Vivamus porttitor augue eu purus lobortis pharetra. Nulla facilisi. Etiam consequat ipsum vitae orci.",
       "lgItems": [
         {
@@ -254,34 +242,28 @@
       ],
       "hundredCities": [
         {
-          "city": "Londres",
-          "country": "Reino Unido",
-          "elipseCountry": "GB",
-          "folderPath": "LondonFolder"
+          "city": "Cairo",
+          "country": "Egito",
+          "elipseCountry": "EG",
+          "folderPath": "https://images.unsplash.com/photo-1572252009286-268acec5ca0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
         },
         {
-          "city": "Paris",
-          "country": "França",
-          "elipseCountry": "FR",
-          "folderPath": "ParisFolder"
+          "city": "Hurghada",
+          "country": "Egito",
+          "elipseCountry": "EG",
+          "folderPath": "https://images.unsplash.com/photo-1562679300-722c0b24717d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80gueFolder"
         },
         {
-          "city": "Roma",
-          "country": "Itália",
-          "elipseCountry": "IT",
-          "folderPath": "RomeFolder"
+          "city": "Joanesburgo",
+          "country": "África do Sul",
+          "elipseCountry": "ZA",
+          "folderPath": "https://images.unsplash.com/photo-1552937075-967cf58b74a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
         },
         {
-          "city": "Praga",
-          "country": "República Tcheca",
-          "elipseCountry": "GB",
-          "folderPath": "PragueFolder"
-        },
-        {
-          "city": "Amsterdã",
-          "country": "Holanda",
-          "elipseCountry": "NL",
-          "folderPath": "AmsterdamFolder"
+          "city": "Marraquexe",
+          "country": "Marrocos",
+          "elipseCountry": "MA",
+          "folderPath": "https://images.unsplash.com/photo-1583856073081-d75a4b9ce95b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
         }
       ]
     },
@@ -290,7 +272,7 @@
       "name": "Oceania",
       "callToAction": "Um passeio nas grandes ilhas.",
       "swiperImage": "https://images.unsplash.com/photo-1551140676-c5a87bdb7074?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",
-      "continentBanner": "https://images.unsplash.com/photo-1543767011-7d8d624bc8cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=831&q=80",
+      "continentBanner": "https://images.unsplash.com/photo-1493375366763-3ed5e0e6d8ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",
       "lgInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ante justo, euismod eu varius nec, dignissim ac dui. Quisque convallis accumsan consectetur. Vivamus porttitor augue eu purus lobortis pharetra. Nulla facilisi. Etiam consequat ipsum vitae orci.",
       "lgItems": [
         {
@@ -311,34 +293,22 @@
       ],
       "hundredCities": [
         {
-          "city": "Londres",
-          "country": "Reino Unido",
-          "elipseCountry": "GB",
-          "folderPath": "LondonFolder"
+          "city": "Sydney",
+          "country": "Austrália",
+          "elipseCountry": "AU",
+          "folderPath": "https://images.unsplash.com/photo-1593592001457-8d4fdcd47452?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
         },
         {
-          "city": "Paris",
-          "country": "França",
-          "elipseCountry": "FR",
-          "folderPath": "ParisFolder"
+          "city": "Melbourne",
+          "country": "Austrália",
+          "elipseCountry": "AU",
+          "folderPath": "https://images.unsplash.com/photo-1514395629347-41e19e338c6a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
         },
         {
-          "city": "Roma",
-          "country": "Itália",
-          "elipseCountry": "IT",
-          "folderPath": "RomeFolder"
-        },
-        {
-          "city": "Praga",
-          "country": "República Tcheca",
-          "elipseCountry": "GB",
-          "folderPath": "PragueFolder"
-        },
-        {
-          "city": "Amsterdã",
-          "country": "Holanda",
-          "elipseCountry": "NL",
-          "folderPath": "AmsterdamFolder"
+          "city": "Auckland",
+          "country": "Nova Zelândia",
+          "elipseCountry": "NZ",
+          "folderPath": "https://images.unsplash.com/photo-1600208669687-f19af3638cb9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
         }
       ]
     }

@@ -53,7 +53,7 @@ export default function Continent({ continent }: CurrentContinentProps) {
           mb="20"
         >
           <Text
-            margin="23rem auto 3.75rem 8.75rem"
+            margin="23rem auto 3.75rem 5.5rem"
             position="absolute"
             fontFamily="Poppins"
             fontWeight="600"
@@ -72,7 +72,7 @@ export default function Continent({ continent }: CurrentContinentProps) {
           lgInfo={continent.lgItems}
         />
 
-        <Box mt="20" maxWidth={1160} ml="auto" mr="auto" mb="9">
+        <Box mt="20" width="100%" maxWidth={1160} ml="auto" mr="auto" mb="9">
           <Text
             fontWeight="500"
             mb="10"
