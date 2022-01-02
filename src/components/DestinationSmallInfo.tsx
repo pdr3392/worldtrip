@@ -24,12 +24,16 @@ export default function DestinationSmallInfo({
   infoIcon,
 }: DestinationSmallInfoProps) {
   return (
-    <Flex direction="column" align="center">
+    <Flex
+      direction="column"
+      align={["flex-start", "center"]}
+      maxWidth={["120", "490"]}
+    >
       <Text
         color="yellow.500"
-        fontSize="3rem"
+        fontSize={["1.5rem", "3rem"]}
         fontWeight="600"
-        lineHeight="4.5rem"
+        lineHeight={["2.25rem", "4.5rem"]}
       >
         {highlight}
       </Text>
@@ -38,9 +42,9 @@ export default function DestinationSmallInfo({
           whiteSpace="nowrap"
           textAlign="center"
           color="gray.900"
-          fontSize="1.5rem"
-          fontWeight="600"
-          lineHeight="2.25rem"
+          fontSize={["1.125rem", "1.5rem"]}
+          fontWeight={["400", "600"]}
+          lineHeight={["1.688rem", "2.25rem"]}
         >
           {info}
         </Text>
@@ -52,7 +56,8 @@ export default function DestinationSmallInfo({
                 ml="0.375rem"
                 color="gray.600"
                 opacity="50%"
-                size="0.8rem"
+                h={["0.813rem", "1rem"]}
+                w={["0.813rem", "1rem"]}
               />
             </PopoverTrigger>
             <PopoverContent

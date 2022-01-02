@@ -1,4 +1,12 @@
-import { Box, Center, Flex, Text, Wrap, WrapItem } from "@chakra-ui/react";
+import {
+  Box,
+  Center,
+  Flex,
+  Image,
+  Text,
+  Wrap,
+  WrapItem,
+} from "@chakra-ui/react";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { Params } from "next/dist/server/router";
 import DestinationLargeInfo from "../../components/DestinationLargeInfo";
@@ -40,31 +48,43 @@ interface CurrentContinentProps {
 
 export default function Continent({ continent }: CurrentContinentProps) {
   return (
-    <Flex direction="column" align="center" h="100vh">
+    <Flex direction="column" align="center" maxWidth={["375px", "1440px"]}>
       <Header needBackward />
 
-      <Flex direction="column" maxWidth={1440} w="100%" bgColor="gray.200">
+      <Flex
+        direction="column"
+        maxWidth={[375, 1440]}
+        w="100%"
+        bgColor="gray.200"
+      >
         <Box
           position="relative"
           as="div"
-          maxWidth="1440"
-          maxHeight="500"
+          maxWidth={["375", "1440"]}
+          maxHeight={["150", "500"]}
           overflow="hidden"
-          mb="20"
+          mb={["5", "20"]}
         >
           <Text
-            margin="23rem auto 3.75rem 5.5rem"
+            margin={[
+              "3.5rem 8.563rem 3.5rem 8.563rem",
+              "23rem auto 3.75rem 5.5rem",
+            ]}
             position="absolute"
             fontFamily="Poppins"
             fontWeight="600"
-            fontSize="3rem"
-            lineHeight="4.5rem"
+            fontSize={["1.75rem", "3rem"]}
+            lineHeight={["2.625rem", "4.5rem"]}
             color="gray.200"
             textShadow="7px -4px 6px rgba(0,0,0,0.92)"
           >
             {continent.name}
           </Text>
-          <img src={continent.continentBanner} alt="Banner" />
+          <Image
+            ObjectFit="cover"
+            src={continent.continentBanner}
+            alt="Banner"
+          />
         </Box>
 
         <DestinationMainInfo
@@ -72,16 +92,29 @@ export default function Continent({ continent }: CurrentContinentProps) {
           lgInfo={continent.lgItems}
         />
 
-        <Box mt="20" width="100%" maxWidth={1160} ml="auto" mr="auto" mb="9">
+        {/* TERMINAR */}
+        <Box m={["2rem"]}>
           <Text
             fontWeight="500"
-            mb="10"
-            fontSize="2.25rem"
+            mb={["1.25rem", "10"]}
+            color="green.900"
+            fontSize={["1.5rem", "2.25rem"]}
             lineHeight="3.375rem"
           >
             Cidades +100
           </Text>
-          <Wrap spacing="2.813rem">
+        </Box>
+
+        <Box
+          mt={["2rem", "20"]}
+          width="100%"
+          direction={["row", "column"]}
+          maxWidth={["256px", "1160px"]}
+          ml="auto"
+          mr="auto"
+          mb="9"
+        >
+          <Wrap spacing={["0", "2.813rem"]}>
             {continent.hundredCities.map((city) => (
               <WrapItem key={city.city}>
                 <Center>

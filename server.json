@@ -4,7 +4,7 @@
       "uid": "europe",
       "name": "Europa",
       "callToAction": "O continente mais antigo.",
-      "swiperImage": "/images/EuropeSwiper.svg",
+      "swiperImage": "https://images.unsplash.com/photo-1490642914619-7955a3fd483c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",
       "continentBanner": "https://images.unsplash.com/photo-1508808402998-ec38e4bf0fd0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",
       "lgInfo": "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste",
       "lgItems": [

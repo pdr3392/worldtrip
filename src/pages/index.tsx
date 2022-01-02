@@ -58,6 +58,7 @@ export default function Home({ continents }: HomeProps) {
         direction="column"
         align="center"
         maxWidth={[375, 1440]}
+        h="100vh"
         bgColor="gray.200"
       >
         <Box w="100%" as="div" mb={["5", "20"]}>
@@ -110,7 +111,7 @@ export default function Home({ continents }: HomeProps) {
           </Wrap>
         </Flex>
 
-        <Stack spacing={["1.25rem", "14"]} align="center" mb={["0", "10"]}>
+        <Stack spacing={["1.25rem", "14"]} align="center" mb={["3", "10"]}>
           <Box
             w={["60px", "90px"]}
             border={["1px solid rgba(71, 88, 91, 0.8)", "2px solid #47585B"]}
@@ -120,7 +121,7 @@ export default function Home({ continents }: HomeProps) {
             <Text
               fontSize={["1.25rem", "2.25rem"]}
               fontWeight="500"
-              lineHeight={["1.875rem", "14"]}
+              lineHeight={["1.875rem", "1"]}
               color="gray.900"
             >
               Vamos nessa?
@@ -128,7 +129,7 @@ export default function Home({ continents }: HomeProps) {
             <Text
               fontSize={["1.25rem", "2.25rem"]}
               fontWeight="500"
-              lineHeight={["1.875rem", "14"]}
+              lineHeight={["1.875rem", "2"]}
               color="gray.900"
             >
               Então escolha seu continente

@@ -19,8 +19,8 @@ export default function CarouselItem({
           <Text
             fontFamily="Poppins"
             fontWeight="700"
-            fontSize="3rem"
-            lineHeight="4.5rem"
+            fontSize={["1.5rem", "3rem"]}
+            lineHeight={["2.25rem", "4.5rem"]}
             color="gray.200"
           >
             {continent}
@@ -28,7 +28,7 @@ export default function CarouselItem({
           <Text
             fontFamily="Poppins"
             fontWeight="700"
-            fontSize="1.5rem"
+            fontSize={["0.875rem", "1.5rem"]}
             lineHeight="2.25rem"
             color="gray.200"
           >

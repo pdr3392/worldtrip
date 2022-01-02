@@ -28,10 +28,10 @@ export default function Header({ needBackward }: HeaderProps) {
       bgColor="gray.200"
     >
       {needBackward && (
-        <Box ml="36" as="button" position="absolute" left="0">
+        <Box ml={["2", "36"]} as="button" position="absolute" left="0">
           <Link href="/" passHref>
             <ChakraLink>
-              <ChevronLeftIcon h="8" w="8" />
+              <ChevronLeftIcon h={["1rem", "8"]} w={["1rem", "8"]} />
             </ChakraLink>
           </Link>
         </Box>

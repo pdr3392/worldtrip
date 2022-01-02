@@ -1,4 +1,4 @@
-import { Box, Stack, Text, VStack } from "@chakra-ui/react";
+import { Box, Stack, Text, useBreakpointValue, VStack } from "@chakra-ui/react";
 import ReactCountryFlag from "react-country-flag";
 
 interface DestinationLargeInfoProps {
@@ -14,6 +14,11 @@ export default function DestinationLargeInfo({
   country,
   elipseCountry,
 }: DestinationLargeInfoProps) {
+  const isWideVersion = useBreakpointValue({
+    base: false,
+    lg: true,
+  });
+
   return (
     <Box
       _hover={{ cursor: "pointer", outline: "1px solid rgb(255, 186, 8)" }}
@@ -21,9 +26,10 @@ export default function DestinationLargeInfo({
       borderRadius="4"
       outline="1px solid rgba(255, 186, 8, 0.5)"
       outlineOffset="-1px"
-      w="16rem"
+      w={["300", "16rem"]}
       h="17.438rem"
       minWidth="256px"
+      mb={!isWideVersion ? "5" : "auto"}
     >
       <Box
         position="absolute"

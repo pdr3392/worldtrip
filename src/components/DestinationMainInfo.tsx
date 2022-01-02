@@ -17,26 +17,40 @@ export default function DestinationMainInfo({
   lgInfo,
 }: DestinationMainInfoProps) {
   return (
-    <Stack maxWidth={1160} ml="auto" mr="auto" direction="row" spacing="4.5rem">
+    <Stack
+      maxWidth={["343px", "1160px"]}
+      ml="auto"
+      mr="auto"
+      direction={["column", "row"]}
+      spacing={["1rem", "4.5rem"]}
+    >
       <Text
         maxWidth={600}
         maxHeight={211}
         textAlign="justify"
-        fontSize="1.5rem"
+        fontSize={["0.875rem", "1.5rem"]}
         fontWeight="400"
-        lineHeight="2.25rem"
+        lineHeight={["1.313rem", "2.25rem"]}
+        color="gray.900"
       >
         {mainInfo}
       </Text>
 
-      {lgInfo.map((info) => (
-        <DestinationSmallInfo
-          key={info.info}
-          highlight={info.highlight}
-          info={info.info}
-          infoIcon={info.infoIcon}
-        />
-      ))}
+      <Stack
+        direction="row"
+        spacing="2.625rem"
+        justify="center"
+        maxWidth="343px"
+      >
+        {lgInfo.map((info) => (
+          <DestinationSmallInfo
+            key={info.info}
+            highlight={info.highlight}
+            info={info.info}
+            infoIcon={info.infoIcon}
+          />
+        ))}
+      </Stack>
     </Stack>
   );
 }
