@@ -44,28 +44,36 @@ interface CurrentContinentProps {
 
 export default function Continent({ continent }: CurrentContinentProps) {
   return (
-    <Flex direction="column" align="center" maxWidth={["375px", "1440px"]}>
+    <Flex
+      bgColor="gray.200"
+      direction="column"
+      align="center"
+      maxWidth="100vw"
+      overflow="hidden"
+    >
       <Header needBackward />
 
       <Flex
         direction="column"
-        maxWidth={[375, 1440]}
-        w="100%"
-        bgColor="gray.200"
+        maxWidth={{ base: 425, sm: 767, md: 1023, lg: 1439, xl: 1440 }}
+        w="100vw"
       >
         <Box
           position="relative"
           as="div"
-          maxWidth={["375", "1440"]}
-          maxHeight={["150", "500"]}
+          maxWidth={{ base: 425, sm: 767, md: 1023, lg: 1439, xl: 1440 }}
+          maxHeight={{ base: 150, sm: 250, md: 500 }}
           overflow="hidden"
-          mb={["5", "20"]}
+          mb={{ base: "5", sm: "10", md: "8", lg: "10", xl: "20" }}
         >
           <Text
-            margin={[
-              "3.5rem 8.563rem 3.5rem 8.563rem",
-              "23rem auto 3.75rem 8.5rem",
-            ]}
+            margin={{
+              base: "4rem auto auto 6.5rem",
+              sm: "6rem auto auto 10.1rem",
+              md: "7rem auto auto 10.5rem",
+              lg: "23rem auto 3.75rem 5rem",
+              xl: "23rem auto 3.75rem 8.5rem",
+            }}
             position="absolute"
             fontFamily="Poppins"
             fontWeight="600"
@@ -84,12 +92,20 @@ export default function Continent({ continent }: CurrentContinentProps) {
           lgInfo={continent.lgItems}
         />
 
-        {/* TERMINAR */}
-        <Box ml={["1rem", "5.75rem"]} maxWidth={["375px", "1160px"]}>
+        <Box
+          ml={{
+            base: "2rem",
+            sm: "6.5rem",
+            md: "6.5rem",
+            lg: "5rem",
+            xl: "8.75rem",
+          }}
+          maxWidth={{ base: "375px", lg: "975px", xl: "1160px" }}
+        >
           <Text
+            mt={["5", "20"]}
             fontWeight="500"
             mb={["1.25rem", "10"]}
-            mt={["5", "20"]}
             color="green.900"
             fontSize={["1.5rem", "2.25rem"]}
             lineHeight="3.375rem"
@@ -102,9 +118,14 @@ export default function Continent({ continent }: CurrentContinentProps) {
           mt={["0.25rem", "0.5rem"]}
           width="100%"
           direction={["row", "column"]}
-          maxWidth={["256px", "1160px"]}
-          ml="auto"
-          mr="auto"
+          maxWidth={{
+            base: "256px",
+            md: "560px",
+            lg: "860px",
+            xl: "1160px",
+          }}
+          ml={{ base: "auto", lg: "5rem", xl: "8.5rem" }}
+          mr={{ base: "auto", lg: "auto", xl: "auto" }}
           mb={["2", "2rem"]}
         >
           <Wrap spacing={["0", "2.813rem"]}>

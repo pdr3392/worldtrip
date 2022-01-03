@@ -31,6 +31,7 @@ export default function DestinationLargeInfo({
       _hover={{ cursor: "pointer", outline: "1px solid rgb(255, 186, 8)" }}
       position="relative"
       borderRadius="4"
+      bgColor="#FFF"
       outline="1px solid rgba(255, 186, 8, 0.5)"
       outlineOffset="-1px"
       w={["300", "16rem"]}

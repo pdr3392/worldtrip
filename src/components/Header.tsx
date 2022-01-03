@@ -22,16 +22,24 @@ export default function Header({ needBackward }: HeaderProps) {
     <Flex
       as="header"
       w="100%"
-      minHeight={["50px", "100px"]}
+      minHeight={{ base: "50px", md: "50px", lg: "100px", xl: "100px" }}
       alignItems="center"
       justifyContent="center"
       bgColor="gray.200"
     >
       {needBackward && (
-        <Box ml={["2", "36"]} as="button" position="absolute" left="0">
+        <Box
+          ml={{ base: "2", md: "20", lg: "36" }}
+          as="button"
+          position="absolute"
+          left="0"
+        >
           <Link href="/" passHref>
             <ChakraLink>
-              <ChevronLeftIcon h={["1rem", "8"]} w={["1rem", "8"]} />
+              <ChevronLeftIcon
+                h={{ base: "1rem", md: "1.5rem", lg: "8" }}
+                w={{ base: "1rem", md: "1.5rem", lg: "8" }}
+              />
             </ChakraLink>
           </Link>
         </Box>

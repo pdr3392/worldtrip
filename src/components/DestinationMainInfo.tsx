@@ -1,4 +1,4 @@
-import { Stack, Text } from "@chakra-ui/react";
+import { Box, Flex, Stack, Text } from "@chakra-ui/react";
 import DestinationSmallInfo from "./DestinationSmallInfo";
 
 interface ContinentLargeItemsProps {
@@ -18,17 +18,31 @@ export default function DestinationMainInfo({
 }: DestinationMainInfoProps) {
   return (
     <Stack
-      maxWidth={["343px", "1160px"]}
-      ml="auto"
+      maxWidth={{
+        base: "250px",
+        sm: "426px",
+        md: "520px",
+        lg: "720px",
+        xl: "900px",
+      }}
+      ml={{ base: "auto", md: "auto", lg: "5.5rem", xl: "9rem" }}
       mr="auto"
-      direction={["column", "row"]}
-      spacing={["1rem", "8rem"]}
+      mb={{ lg: "44", xl: "10" }}
+      align={{ md: "flex-start", lg: "center" }}
+      direction={{ base: "column", sm: "column", md: "row" }}
+      spacing={{ base: "1rem", sm: "24", md: "7rem", lg: "3.5rem", xl: "7rem" }}
+      whiteSpace="normal"
     >
       <Text
-        maxWidth={600}
+        maxWidth={{ base: 250, sm: 426, md: 400, lg: 500, xl: 600 }}
         maxHeight={211}
         textAlign="justify"
-        fontSize={["0.875rem", "1.5rem"]}
+        fontSize={{
+          base: "0.875rem",
+          sm: "1.3rem",
+          md: "1rem",
+          lg: "1.5rem",
+        }}
         fontWeight="400"
         lineHeight={["1.313rem", "2.25rem"]}
         color="gray.900"
@@ -37,10 +51,10 @@ export default function DestinationMainInfo({
       </Text>
 
       <Stack
-        direction="row"
-        spacing="2.625rem"
+        direction={{ base: "row", md: "column", lg: "row", xl: "row" }}
+        spacing={{ base: "10", md: "2.625rem" }}
         justify="flex-start"
-        maxWidth="343px"
+        maxWidth={{ base: "270px", md: "250px", lg: "343px", xl: "343px" }}
       >
         {lgInfo.map((info) => (
           <DestinationSmallInfo

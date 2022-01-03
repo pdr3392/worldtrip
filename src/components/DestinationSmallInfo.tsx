@@ -22,12 +22,12 @@ export default function DestinationSmallInfo({
   return (
     <Flex
       direction="column"
-      align={["flex-start", "center"]}
+      align={{ base: "flex-start", sm: "center", md: "center" }}
       maxWidth={["120", "490"]}
     >
       <Text
         color="yellow.500"
-        fontSize={["1.5rem", "3rem"]}
+        fontSize={{ base: "1.5rem", sm: "3rem", md: "3rem" }}
         fontWeight="600"
         lineHeight={["2.25rem", "4.5rem"]}
       >
@@ -38,7 +38,7 @@ export default function DestinationSmallInfo({
           whiteSpace="nowrap"
           textAlign="center"
           color="gray.900"
-          fontSize={["1.125rem", "1.5rem"]}
+          fontSize={{ base: "0.8rem", sm: "1.125rem", md: "1.5rem" }}
           fontWeight={["400", "600"]}
           lineHeight={["1.688rem", "2.25rem"]}
         >
