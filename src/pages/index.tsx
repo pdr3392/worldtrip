@@ -9,8 +9,7 @@ import {
   Wrap,
   WrapItem,
 } from "@chakra-ui/react";
-import { GetServerSideProps, GetStaticPaths, GetStaticProps } from "next";
-import { useEffect, useState } from "react";
+import { GetStaticProps } from "next";
 import BodyIcon from "../components/BodyIcon";
 import Header from "../components/Header";
 import SwiperCarousel from "../components/SwiperCarousel";
@@ -51,19 +50,18 @@ export default function Home({ continents }: HomeProps) {
   });
 
   return (
-    <Flex direction="column" align="center" w={["100vw", "100%"]}>
+    <Flex
+      direction="column"
+      bgColor="gray.200"
+      align="center"
+      w={["100vw", "100%"]}
+    >
       <Header needBackward={false} />
 
-      <Flex
-        direction="column"
-        align="center"
-        maxWidth={[375, 1440]}
-        h="100vh"
-        bgColor="gray.200"
-      >
+      <Flex direction="column" align="center" maxWidth={[375, 1440]}>
         <Box w="100%" as="div" mb={["5", "20"]}>
           {isWideVersion ? (
-            <img src="/images/Banner.svg" alt="Banner" />
+            <Image src="/images/Banner.svg" alt="Banner" />
           ) : (
             <Image
               w="375px"

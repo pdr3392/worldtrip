@@ -4,12 +4,8 @@ import {
   Popover,
   PopoverTrigger,
   PopoverContent,
-  PopoverHeader,
   PopoverBody,
-  PopoverFooter,
   PopoverArrow,
-  PopoverCloseButton,
-  PopoverAnchor,
 } from "@chakra-ui/react";
 
 interface DestinationSmallInfoProps {
@@ -63,7 +59,7 @@ export default function DestinationSmallInfo({
             <PopoverContent
               align="center"
               m="0.8rem"
-              width="180px"
+              width={["180px", "150px"]}
               borderColor="gray.400"
             >
               <PopoverArrow />

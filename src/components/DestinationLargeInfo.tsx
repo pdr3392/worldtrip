@@ -1,4 +1,11 @@
-import { Box, Stack, Text, useBreakpointValue, VStack } from "@chakra-ui/react";
+import {
+  Box,
+  Stack,
+  Text,
+  useBreakpointValue,
+  VStack,
+  Image,
+} from "@chakra-ui/react";
 import ReactCountryFlag from "react-country-flag";
 
 interface DestinationLargeInfoProps {
@@ -38,7 +45,7 @@ export default function DestinationLargeInfo({
         maxWidth="256px"
         maxHeight="173px"
       >
-        <img src={folderPath} alt={city} />
+        <Image src={folderPath} alt={city} />
       </Box>
 
       <Stack position="absolute" direction="row" mt="48" ml="3" align="center">

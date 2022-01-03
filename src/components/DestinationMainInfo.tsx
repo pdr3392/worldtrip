@@ -22,7 +22,7 @@ export default function DestinationMainInfo({
       ml="auto"
       mr="auto"
       direction={["column", "row"]}
-      spacing={["1rem", "4.5rem"]}
+      spacing={["1rem", "8rem"]}
     >
       <Text
         maxWidth={600}
@@ -39,7 +39,7 @@ export default function DestinationMainInfo({
       <Stack
         direction="row"
         spacing="2.625rem"
-        justify="center"
+        justify="flex-start"
         maxWidth="343px"
       >
         {lgInfo.map((info) => (

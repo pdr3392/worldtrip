@@ -3,10 +3,10 @@ import {
   Flex,
   Link as ChakraLink,
   useBreakpointValue,
+  Image,
 } from "@chakra-ui/react";
 import { ChevronLeftIcon } from "@chakra-ui/icons";
 import Link from "next/link";
-import Image from "next/image";
 
 interface HeaderProps {
   needBackward: boolean;

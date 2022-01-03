@@ -14,10 +14,6 @@ import DestinationMainInfo from "../../components/DestinationMainInfo";
 import Header from "../../components/Header";
 import api from "../../services/api";
 
-interface ParamsProps {
-  continent: string;
-}
-
 interface HundredCitiesProps {
   city: string;
   country: string;
@@ -68,7 +64,7 @@ export default function Continent({ continent }: CurrentContinentProps) {
           <Text
             margin={[
               "3.5rem 8.563rem 3.5rem 8.563rem",
-              "23rem auto 3.75rem 5.5rem",
+              "23rem auto 3.75rem 8.5rem",
             ]}
             position="absolute"
             fontFamily="Poppins"
@@ -80,11 +76,7 @@ export default function Continent({ continent }: CurrentContinentProps) {
           >
             {continent.name}
           </Text>
-          <Image
-            ObjectFit="cover"
-            src={continent.continentBanner}
-            alt="Banner"
-          />
+          <Image src={continent.continentBanner} alt="Banner" />
         </Box>
 
         <DestinationMainInfo
@@ -93,10 +85,11 @@ export default function Continent({ continent }: CurrentContinentProps) {
         />
 
         {/* TERMINAR */}
-        <Box m={["2rem"]}>
+        <Box ml={["1rem", "5.75rem"]} maxWidth={["375px", "1160px"]}>
           <Text
             fontWeight="500"
             mb={["1.25rem", "10"]}
+            mt={["5", "20"]}
             color="green.900"
             fontSize={["1.5rem", "2.25rem"]}
             lineHeight="3.375rem"
@@ -106,13 +99,13 @@ export default function Continent({ continent }: CurrentContinentProps) {
         </Box>
 
         <Box
-          mt={["2rem", "20"]}
+          mt={["0.25rem", "0.5rem"]}
           width="100%"
           direction={["row", "column"]}
           maxWidth={["256px", "1160px"]}
           ml="auto"
           mr="auto"
-          mb="9"
+          mb={["2", "2rem"]}
         >
           <Wrap spacing={["0", "2.813rem"]}>
             {continent.hundredCities.map((city) => (
