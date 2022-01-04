@@ -15,12 +15,32 @@ export default function CarouselItem({
   return (
     <Link href={`/continents/${uid}`} passHref>
       <ChakraLink style={{ textDecoration: "none" }}>
-        <Box mt="2.5rem">
+        <Box
+          mt={{
+            base: "1.5rem",
+            sm: "2.5rem",
+            md: "2.5rem",
+            lg: "2.5rem",
+            xl: "2.5rem",
+          }}
+        >
           <Text
             fontFamily="Poppins"
             fontWeight="700"
-            fontSize={["1.5rem", "3rem"]}
-            lineHeight={["2.25rem", "4.5rem"]}
+            fontSize={{
+              base: "1.5rem",
+              sm: "2rem",
+              md: "2.5rem",
+              lg: "2.8rem",
+              xl: "3rem",
+            }}
+            lineHeight={{
+              base: "2.25rem",
+              sm: "2.8rem",
+              md: "3.5rem",
+              lg: "4rem",
+              xl: "4.5rem",
+            }}
             color="gray.200"
           >
             {continent}
@@ -28,7 +48,13 @@ export default function CarouselItem({
           <Text
             fontFamily="Poppins"
             fontWeight="700"
-            fontSize={["0.875rem", "1.5rem"]}
+            fontSize={{
+              base: "0.7rem",
+              sm: "1rem",
+              md: "1.2rem",
+              lg: "1.4rem",
+              xl: "1.5rem",
+            }}
             lineHeight="2.25rem"
             color="gray.200"
           >

@@ -51,9 +51,20 @@ export default function SwiperCarousel({ continents }: SwiperCarouselProps) {
 
   return (
     <Box
-      h={["15.625rem", "28.125rem"]}
-      w={["23.438rem", "77.5rem"]}
-      mb={["1rem", "2.5rem"]}
+      h={{
+        base: "15rem",
+        sm: "18rem",
+        md: "25rem",
+        lg: "26rem",
+        xl: "28.125rem",
+      }}
+      w={{
+        base: "100vw",
+        sm: "100vw",
+        md: "45rem",
+        lg: "60rem",
+        xl: "77.5rem",
+      }}
     >
       <Swiper
         cssMode={true}
